@@ -1,13 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  @apply bg-primary text-primary;
+}
+
+.rounded-div {
+  @apply border border-gray-400 rounded-2xl shadow-[#696969] shadow-md bg-primary px-2 max-w-[1140px] w-full mx-auto;
+}
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #dbdbdb88;
+  --color-text-secondary: #e2e8f08e;
+  --color-text-accent: #81e6d9;
+  --color-bg-input: #4a5361;
+  --color-bg-button: #81e6d9;
+}
+
+.light {
+  --color-bg-primary: white;
+  --color-bg-secondary: #edf2f7b8;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+  --color-bg-input: rgb(156 163 175);
+  --color-bg-button: #2b6cb0;
 }
